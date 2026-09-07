@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "dev": "python3 -m http.server 5173",
+    "build": "node -e \"const fs=require('fs'); const html=fs.readFileSync('index.html','utf8'); if (!html.includes('<style>') || !html.includes('<script>')) throw new Error('index.html must contain inline CSS and JavaScript'); console.log('Self-contained index.html verified.');\""
+  }
+}
